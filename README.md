@@ -29,3 +29,10 @@
 * `node 01_vanilla.js`
   * Open in your browser or launch the curl
     * 'http://localhost:3333/' -- Check the "Hello, world!" -- 
+### Static flag + cowsay
+* [cowsay](https://www.npmjs.com/package/cowsay)
+  * `.say(StringToPass)` customize the stringToPass 
+* Static flag -- adjust 'withCow' in the code -- 
+* `node 02_basic_flags.js`
+  * Open in your browser or launch the curl
+    * 'http://localhost:3333/' -- Check the "Hello, world!" customized with cow draw --

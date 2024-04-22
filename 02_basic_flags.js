@@ -12,7 +12,8 @@ app.use((_, res, next) => {
 routes.get("/", async (_, res) => {
   // set this to true to test our new
   // cow-based greeting system
-  const withCow = false;
+  //const withCow = false;
+  const withCow = true;
   if (withCow) {
     res.send(cowsay.say({ text: "Hello, world!" }));
   } else {
