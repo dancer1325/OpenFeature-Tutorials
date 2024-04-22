@@ -19,7 +19,7 @@ const FLAG_CONFIGURATION = {
       off: false
     },
     disabled: false,
-    defaultVariant: "on"
+    defaultVariant: "on"    // hardcoded one
   }
 };
 
@@ -28,6 +28,7 @@ const featureFlagProvider = new InMemoryProvider(FLAG_CONFIGURATION);
 OpenFeature.setProvider(featureFlagProvider);
 
 routes.get("/", async (_, res) => {
+  // featureFlags.getBooleanValue   is being got because the Feature Flag provider is set although it's hardcoded also
   const withCows = await featureFlags.getBooleanValue("with-cows", false);
   if (withCows) {
     res.send(cowsay.say({ text: "Hello, world!" }));

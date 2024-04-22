@@ -42,3 +42,16 @@
 * `node 03_openfeature.js` 
   * Open in your browser or launch the curl
     * 'http://localhost:3333/' -- Check the "Hello, world!" WITHOUT customized cow draw --
+#### With feature flag provider
+* OpenFeature is JUST a specification!!!
+  * -> you need a Open Feature Flag system / framework
+* Possible feature flag providers
+  * commercial product
+  * open-source offering
+  * internal tool
+  * simple one without a backend -- this case --
+  * ...
+* `node 04_openfeature_with_provider.js`
+  * Open in your browser or launch the curl
+    * 'http://localhost:3333/' -- Check the "Hello, world!" customized with cow draw --
+      * if you want to get WITHOUT customizing -> you need to stop & change the 'defaultVariant' in FLAG_CONFIGURATION & start the server again
