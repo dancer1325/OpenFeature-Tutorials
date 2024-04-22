@@ -9,27 +9,23 @@
 
 <h2 align="center">Five Minutes to Feature Flags Tutorial</h2>
 
-## 👋 Hey there!
+[Documentation Link](https://openfeature.dev/docs/tutorials/five-minutes-to-feature-flags)
 
-This repo contains everything you need to start on your OpenFeature journey.
+# Goal
+* Add feature flagging to a Node service -- via express server --
 
-**To get started, choose one of the options below:**
+# Ways to run
+## 👩‍💻 Interactive Tutorial == browser
+* Requirements
+  * free Killercoda account
+* [Killercoda](https://killercoda.com/open-feature/scenario/five-minutes-to-feature-flags)
 
-### 👩‍💻 Interactive Tutorial
-
-Want to learn about OpenFeature interactively in the browser? If so, check out our Five Minutes to Feature Flags lesson on [Killercoda](https://killercoda.com/).
-
-[![Click here](https://img.shields.io/badge/Click%20here-Interactive%20Tutorial-green)](https://killercoda.com/open-feature/scenario/five-minutes-to-feature-flags)
-
-> **Note**
-> Requires a free Killercoda account
-
-### 📚 Written Tutorial
-
-Prefer to work on your own computer? We have your covered! Head over to the Five Minutes to Feature Flags tutorial on the OpenFeature docs.
-
-[![Click here](https://img.shields.io/badge/Click%20here-Written%20Tutorial-green)](https://openfeature.dev/docs/tutorials/five-minutes-to-feature-flags)
-
-## 🙌 Acknowledgment
-
-Special thanks to Pete Hodgson for creating [the blog](https://blog.thepete.net/blog/2023/03/02/five-minutes-to-feature-flags/) that inspired this tutorial.
+## 📚 Written Tutorial == locally
+* Requirements
+  * NodeJs >= v16.0
+* Steps
+  * `npm install`
+### Basic Express server
+* `node 01_vanilla.js`
+  * Open in your browser or launch the curl
+    * 'http://localhost:3333/' -- Check the "Hello, world!" -- 
