@@ -55,3 +55,9 @@
   * Open in your browser or launch the curl
     * 'http://localhost:3333/' -- Check the "Hello, world!" customized with cow draw --
       * if you want to get WITHOUT customizing -> you need to stop & change the 'defaultVariant' in FLAG_CONFIGURATION & start the server again
+#### With targeting
+* == contextual information -> add 'contextEvaluator' & define the context as certain HTTP Request header
+* `node 05_openfeature_with_targeting.js`
+  * Open in your browser or launch the curl
+    * 'http://localhost:3333/' -- Check the "Hello, world!" WITHOUT customized cow draw --
+    * 'curl http://localhost:3333/ -H "X-Cow: Bessie"' -- Check the "Hello, world!" customized cow draw --

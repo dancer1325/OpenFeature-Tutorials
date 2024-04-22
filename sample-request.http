@@ -1,2 +1,6 @@
-### 01_vanilla & 02_basic_flag & 03_openfeature & 04_openfeature_with_provider
+### 01_vanilla & 02_basic_flag & 03_openfeature & 04_openfeature_with_provider & 05_openfeature_wit_targeting
 GET {{host}}
+
+### 05_openfeature_wit_targeting -- passing a header --
+GET {{host}}
+X-COW: Bessie

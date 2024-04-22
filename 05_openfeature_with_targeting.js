@@ -19,8 +19,8 @@ const FLAG_CONFIGURATION = {
       off: false
     },
     disabled: false,
-    defaultVariant: "off",
-    contextEvaluator: (context) => {
+    defaultVariant: "off",    // off by default
+    contextEvaluator: (context) => {    // allows handling contextual information
       if (context.cow === "Bessie") {
         return "on";
       }
@@ -34,6 +34,7 @@ const featureFlagProvider = new InMemoryProvider(FLAG_CONFIGURATION);
 OpenFeature.setProvider(featureFlagProvider);
 
 routes.get("/", async (req, res) => {
+  // Define the context
   const context = {
     cow: req.get("x-cow")
   };
