@@ -1,7 +1,7 @@
 import express from "express";
 import Router from "express-promise-router";
 import cowsay from "cowsay";
-import { OpenFeature } from "@openfeature/server-sdk";
+import { OpenFeature } from "@openfeature/server-sdk";    // added now
 
 const app = express();
 const routes = Router();
@@ -13,6 +13,7 @@ app.use((_, res, next) => {
 const featureFlags = OpenFeature.getClient();
 
 routes.get("/", async (_, res) => {
+  // featureFlags.getBooleanValue     always TimeOut because it's NOT yet configured -> defaultValue
   const withCows = await featureFlags.getBooleanValue("with-cows", false);
   if (withCows) {
     res.send(cowsay.say({ text: "Hello, world!" }));

@@ -36,3 +36,9 @@
 * `node 02_basic_flags.js`
   * Open in your browser or launch the curl
     * 'http://localhost:3333/' -- Check the "Hello, world!" customized with cow draw --
+### OpenFeature
+#### Without configuring feature flag provider 
+* '@openfeature/server-sdk' added
+* `node 03_openfeature.js` 
+  * Open in your browser or launch the curl
+    * 'http://localhost:3333/' -- Check the "Hello, world!" WITHOUT customized cow draw --
