@@ -19,7 +19,15 @@
   * if you configure a provider (next section) -> you will get always "Hello, welcome to this OpenFeature-enabled website!"
 
 ## How to configure a provider?
-* TODO:
+* Check the file '/scripts/flags.flagd.json'
+  * 'welcome-message' matches with the feature flag key checked in the code
+  * '.variants.entries' check the possibilities
+  * '.state' checks if the feature flag is active or not
+* `docker run --rm -it --name flagd -p 8013:8013 -v $(pwd)/:/etc/flagd/  ghcr.io/open-feature/flagd:latest start --uri file:/etc/flagd/flags.flagd.json`
+  * Problems:
+    * Problems1: "docker: invalid reference format: repository name must be lowercase"
+      * Attempt1: `docker run --rm -it --name flagd -p 8013:8013 -v /Users/ADP0253/Documents/Projects/OpenFeature-five-minutes-to-feature-flags/Java SDK + Spring BOOT/demo/scripts/:/etc/flagd/  ghcr.io/open-feature/flagd:latest start --uri file:/etc/flagd/flags.flagd.json`
+      * Solution: TODO:
 
 ## Notes
 * 'OpenFeatureAPI.class'
