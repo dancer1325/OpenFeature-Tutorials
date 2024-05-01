@@ -17,6 +17,12 @@
 * Trigger the requests specified in 'sample-request.http', selecting 'localSpringBoot'
   * if you do NOT configure any provider -> you will get always "Hello!"
   * if you configure a provider (next section) -> you will get always "Hello, welcome to this OpenFeature-enabled website!"
+* With or without provider
+  * without
+    * check in 'OpenFeatureBeans.java', define a bean without
+  * with
+    * check in 'OpenFeatureBeans.java', define a bean with
+    * check next section
 
 ## How to configure a provider?
 * Check the file '/scripts/flags.flagd.json'
@@ -29,8 +35,13 @@
       * Attempt1: `docker run --rm -it --name flagd -p 8013:8013 -v /Users/ADP0253/Documents/Projects/OpenFeature-five-minutes-to-feature-flags/Java SDK + Spring BOOT/demo/scripts/:/etc/flagd/  ghcr.io/open-feature/flagd:latest start --uri file:/etc/flagd/flags.flagd.json`
       * Attempt2: `docker run --rm -it --name flagd -p 8013:8013 -v open:/etc/flagd/  ghcr.io/open-feature/flagd:latest start --uri file:/etc/flagd/flags.flagd.json`
       * Solution: Rename the folder!!! NOT valid folders with special characters as '+'
+    * Problem2: It's NOT watching the file, because if you want to change the 'defaultVariant', to make it effective -> you need to restart the container
+      * Solution: TODO:
 
 ## Notes
 * 'OpenFeatureAPI.class'
   * := main access point to OpenFeature SDK
   * -- designed to act as -- singleton
+* 'sample-request.http'
+  * select 'localSpringBoot'
+  * trigger them

@@ -8,15 +8,15 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class OpenFeatureBeans {
-    // design a bean which injects the OpenFeatureAPI singleton
-    @Bean
+    // 1. design a bean which injects the OpenFeatureAPI singleton
+    /*@Bean
     public OpenFeatureAPI OpenFeatureAPI() {
         final OpenFeatureAPI openFeatureAPI = OpenFeatureAPI.getInstance();
         return openFeatureAPI;
-    }
+    }*/
 
-    //  OpenFeature bean registering a provider
-    /*@Bean
+    //  2. OpenFeature bean registering a provider
+    @Bean
     public OpenFeatureAPI OpenFeatureAPI() {
         final OpenFeatureAPI openFeatureAPI = OpenFeatureAPI.getInstance();
 
@@ -28,5 +28,5 @@ public class OpenFeatureBeans {
         }
 
         return openFeatureAPI;
-    }*/
+    }
 }
