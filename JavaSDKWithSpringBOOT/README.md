@@ -1,6 +1,6 @@
 # Goal
 * integrate OpenFeature Java SDK
-* install & configure an OpenFeature provider -- flagd in this case --
+* install & configure an OpenFeature provider -- [flagd](https://flagd.dev/) in this case --
 * perform basic feature flagging
 
 ## Prerequirements
