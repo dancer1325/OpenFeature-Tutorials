@@ -45,3 +45,4 @@
 * 'sample-request.http'
   * select 'localSpringBoot'
   * trigger them
+* Configure the project for Gradle -- TODO: --
